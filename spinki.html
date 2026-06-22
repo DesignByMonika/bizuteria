@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spinki do mankietów — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+  <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Spinki do mankietów</h2>
+        <p>Ostatni akcent elegancji. Spinki Wermon — złoto, platyna, kamienie szlachetne — dla gentlemana, który nie idzie na kompromis.</p>
+    </div>
+
+    <!-- Side baner -->
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;">
+        <div class="side-banner">
+            <div class="sb-main">
+                <img src="./images/spinki/spinki baner.jpg" alt="Spinki do mankietów Wermon">
+                <div class="sb-overlay"><h3>Gentleman's Craft</h3></div>
+            </div>
+            <div class="sb-side">
+                <div class="sb-s"><img src="./images/spinki/spinki baner (2).jpg" alt="Spinki złote detail"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki (1).jpg" alt="Spinki Klasyczne"></div>
+            <p class="product-name">Spinki Klasyczne</p>
+            <p class="product-material">Złoto 750 · matowe wykończenie</p>
+            <p class="product-price">3 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Klasyczne','3 600 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki (2).jpg" alt="Spinki Onyks"></div>
+            <p class="product-name">Spinki Onyks</p>
+            <p class="product-material">Złoto białe 750 · onyks</p>
+            <p class="product-price">4 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Onyks','4 800 zł','Złoto białe 750 · onyks')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki (3).jpg" alt="Spinki Brylant"></div>
+            <p class="product-name">Spinki Brylant</p>
+            <p class="product-material">Platyna 950 · brylanty 0,20 ct</p>
+            <p class="product-price">9 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Brylant','9 200 zł','Platyna 950')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki (4).jpg" alt="Spinki Emalia"></div>
+            <p class="product-name">Spinki Emalia</p>
+            <p class="product-material">Złoto 585 · emalia navy</p>
+            <p class="product-price">2 900 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Emalia','2 900 zł','Złoto 585 · emalia')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki 6.jpg" alt="Spinki Szafir"></div>
+            <p class="product-name">Spinki Szafir</p>
+            <p class="product-material">Złoto 750 · szafiry Sri Lanka</p>
+            <p class="product-price">7 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Szafir','7 400 zł','Złoto 750 · szafiry')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/spinki/spinki 7.jpg" alt="Spinki Monogram"></div>
+            <p class="product-name">Spinki Monogram</p>
+            <p class="product-material">Złoto 750 · grawer na zamówienie</p>
+            <p class="product-price">5 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Spinki Monogram','5 600 zł','Złoto 750 · grawer')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+</body>
+</html>

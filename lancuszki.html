@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Łańcuszki — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+   <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Łańcuszki</h2>
+        <p>Każde ogniwo ręcznie wykończone. Złoto próby 585 i 750 w splotach ankra, linka, figaro — podstawa każdej eleganckiej stylizacji.</p>
+    </div>
+
+    <!-- Baner panoramiczny -->
+    <div class="pano-banner">
+        <img src="./images/lancuszki/lancuszki baner.jpg" alt="Łańcuszki złote Wermon">
+        <div class="pano-banner-overlay">
+            <h3>Złoto · Ogniwo · Splot</h3>
+            <span>„Najpiękniejszy detal stroju."</span>
+        </div>
+    </div>
+
+    <!-- Tabela informacyjna -->
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;">
+        <div class="chain-info">
+            <div class="chain-info-cell"><span class="ci-label">Próba złota</span><span class="ci-val">585 / 750</span></div>
+            <div class="chain-info-cell"><span class="ci-label">Długości</span><span class="ci-val">40–60 cm</span></div>
+            <div class="chain-info-cell"><span class="ci-label">Sploty</span><span class="ci-val">8 wzorów</span></div>
+            <div class="chain-info-cell"><span class="ci-label">Gwarancja</span><span class="ci-val">2 lata</span></div>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/łancuszek.jpg" alt="Łańcuszek Ankra"></div>
+            <p class="product-name">Łańcuszek Ankra</p>
+            <p class="product-material">Złoto 585 · 45 cm · 1,8 mm</p>
+            <p class="product-price">1 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Ankra','1 400 zł','Złoto 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/lancuszki (1).jpg" alt="Łańcuszek Figaro"></div>
+            <p class="product-name">Łańcuszek Figaro</p>
+            <p class="product-material">Złoto 750 · 50 cm · 2,5 mm</p>
+            <p class="product-price">2 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Figaro','2 800 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/lancuszki (2).jpg" alt="Łańcuszek Linka"></div>
+            <p class="product-name">Łańcuszek Linka</p>
+            <p class="product-material">Złoto białe 585 · 42 cm · skręcany</p>
+            <p class="product-price">1 900 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Linka','1 900 zł','Złoto białe 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/lancuszki (3).jpg" alt="Łańcuszek Venezia"></div>
+            <p class="product-name">Łańcuszek Venezia</p>
+            <p class="product-material">Złoto różowe 750 · 55 cm · płaski</p>
+            <p class="product-price">3 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Venezia','3 600 zł','Złoto różowe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/lancuszki.jpg" alt="Łańcuszek Curb"></div>
+            <p class="product-name">Łańcuszek Curb</p>
+            <p class="product-material">Złoto 750 · 60 cm · 4 mm</p>
+            <p class="product-price">5 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Curb','5 200 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/lancuszki/lancuszki (4).jpg" alt="Łańcuszek Singapur"></div>
+            <p class="product-name">Łańcuszek Singapur</p>
+            <p class="product-material">Złoto 585 · 40 cm · diamentowany</p>
+            <p class="product-price">2 100 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Łańcuszek Singapur','2 100 zł','Złoto 585')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+</body>
+</html>

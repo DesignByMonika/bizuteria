@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Branzoletki — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+      <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Branzoletki</h2>
+        <p>Złoto na nadgarstku — od cienkich bransoletek tennis po masywne modele ID. Każda sztuka to wyraz charakteru i stylu.</p>
+    </div>
+
+    <!-- Split visual -->
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;">
+        <div class="split-visual">
+            <div class="split-img"><img src="./images/branzoletki/branzoletka baner.jpg" alt="Branzoletka złota Wermon"></div>
+            <div class="split-text">
+                <span class="st-eyebrow">Pracownia Wermon · 2024</span>
+                <h3>Tennis &amp; ID</h3>
+                <p>Bransoletka tennis to naszyjnik na nadgarstku — rząd brylantów oprawionych w złoto. Model ID to mocny wyraz osobowości.</p>
+                <ul class="split-list">
+                    <li>Złoto 585 i 750 — żółte, białe, różowe</li>
+                    <li>Brylanty certyfikowane GIA</li>
+                    <li>Regulowane zapięcia bezpieczeństwa</li>
+                    <li>Grawerowanie na zamówienie</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki (1).jpg" alt="Bransoletka Tennis"></div>
+            <p class="product-name">Bransoletka Tennis</p>
+            <p class="product-material">Złoto białe 750 · brylanty 1,80 ct</p>
+            <p class="product-price">21 000 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bransoletka Tennis','21 000 zł','Złoto białe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki (2).jpg" alt="Bransoletka ID"></div>
+            <p class="product-name">Bransoletka ID</p>
+            <p class="product-material">Złoto 750 · grawerowanie</p>
+            <p class="product-price">6 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bransoletka ID','6 800 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki (3).jpg" alt="Bransoletka Charm"></div>
+            <p class="product-name">Bransoletka Charm</p>
+            <p class="product-material">Złoto różowe 585 · charmy</p>
+            <p class="product-price">3 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bransoletka Charm','3 200 zł','Złoto różowe 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki (4).jpg" alt="Bransoletka Bangle"></div>
+            <p class="product-name">Bangle Gold</p>
+            <p class="product-material">Złoto 750 · sztywna · 6 mm</p>
+            <p class="product-price">8 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bangle Gold','8 400 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki.jpg" alt="Bransoletka Pavé"></div>
+            <p class="product-name">Bransoletka Pavé</p>
+            <p class="product-material">Złoto białe 750 · pavé brylantowe</p>
+            <p class="product-price">14 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bransoletka Pavé','14 600 zł','Złoto białe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/branzoletki/branzoletki (5).jpg" alt="Bransoletka Perły"></div>
+            <p class="product-name">Bransoletka Perły</p>
+            <p class="product-material">Złoto 585 · perły słodkowodne</p>
+            <p class="product-price">2 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Bransoletka Perły','2 800 zł','Złoto 585 · perły')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+<script src="./app/app.js"></script>
+</body>
+</html>

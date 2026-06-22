@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrączki — Wermon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+
+   <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Obrączki</h2>
+        <p>Każda obrączka powstaje ręcznie w naszej pracowni. Złoto, platyna i srebro — dobrane do Twojej historii.</p>
+    </div>
+
+    <!-- products-grid w w-collection — identycznie jak Wearables -->
+    <div class="w-collection">
+    <div class="products-grid">
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o1.jpg" alt="Obrączka klasyczna złota">
+            </div>
+            <p class="product-name">Obrączka Aurum</p>
+            <p class="product-material">Złoto 585 · 4 mm</p>
+            <p class="product-price">2 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Obrączka Aurum', '2 400 zł', 'Złoto 585 · 4 mm')">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o2.jpg" alt="Obrączka platynowa">
+            </div>
+            <p class="product-name">Obrączka Platinum</p>
+            <p class="product-material">Platyna 950 · 3 mm</p>
+            <p class="product-price">4 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Obrączka Platinum', '4 800 zł', 'Platyna 950 · 3 mm')">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o3.jpg" alt="Obrączka z brylantami">
+            </div>
+            <p class="product-name">Obrączka Brillante</p>
+            <p class="product-material">Złoto białe 750 · brylanty</p>
+            <p class="product-price">6 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Obrączka Brillante', '6 200 zł', 'Złoto białe 750 · brylanty')">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o4.jpg" alt="Obrączka rose gold">
+            </div>
+            <p class="product-name">Obrączka Rosé</p>
+            <p class="product-material">Złoto różowe 585 · 5 mm</p>
+            <p class="product-price">2 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Obrączka Rosé', '2 800 zł', 'Złoto różowe 585 · 5 mm')">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o5.jpg" alt="Obrączka srebrna">
+            </div>
+            <p class="product-name">Obrączka Argento</p>
+            <p class="product-material">Srebro 925 · 6 mm</p>
+            <p class="product-price">6 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Obrączka Argento', '6 800 zł', 'Srebro 925 · 6 mm')">Dodaj do koszyka</button>
+        </div>
+
+        <div class="product-card reveal">
+            <div class="img-wrap">
+                <img src="./images/obraczki/o6.jpg" alt="Obrączka Cyber Gold">
+            </div>
+            <p class="product-name">Cyber Gold Ring</p>
+            <p class="product-material">Złoto 585 · moduł NFC</p>
+            <p class="product-price">5 500 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this, 'Cyber Gold Ring', '5 500 zł', 'Złoto 585 · moduł NFC')">Dodaj do koszyka</button>
+        </div>
+
+    </div>
+    </div><!-- /.w-collection -->
+
+    <div class="premium-container">
+        <hr>
+        <a href="#"><i><small>Wróć na początek strony</small></i></a>
+        <hr>
+    </div>
+</main>
+
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+
+<script src="./app/app.js"></script>
+</body>
+</html>

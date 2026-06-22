@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Współpraca — Wermon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="preloader">
+    <div class="preloader-dots"></div>
+</div>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+  <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<div class="wspolpraca-hero">
+    <span class="w-eyebrow">Wermon &nbsp;·&nbsp; Kariera </span>
+    <h2>Dołącz do nas</h2>
+    <p>Poszukujemy wyjątkowych rzemieślników, projektantów i specjalistów, którzy podzielają naszą pasję do biżuterii na najwyższym poziomie. Wypełnij formularz — odpiszemy w ciągu 5 dni roboczych.</p>
+</div>
+
+<main>
+<div class="form-page">
+
+    <!-- FORMULARZ -->
+    <form id="wspolpracaForm" novalidate>
+
+        <!--  DANE OSOBOWE -->
+        <fieldset class="ankieta-fieldset">
+            <legend class="ankieta-legend">Dane osobowe</legend>
+
+            <!-- Imię i Nazwisko -->
+            <div class="field-row">
+                <div class="field-group">
+                    <label class="field-label" for="imie">Imię <span class="req">*</span></label>
+                    <input class="ankieta-input" type="text" id="imie" placeholder="np. Aleksandra" autocomplete="given-name">
+                    <span class="field-error" id="err-imie">Imię jest wymagane.</span>
+                </div>
+                <div class="field-group">
+                    <label class="field-label" for="nazwisko">Nazwisko <span class="req">*</span></label>
+                    <input class="ankieta-input" type="text" id="nazwisko" placeholder="np. Kowalska" autocomplete="family-name">
+                    <span class="field-error" id="err-nazwisko">Nazwisko jest wymagane.</span>
+                </div>
+            </div>
+
+            <!-- Email i telefon -->
+            <div class="field-row">
+                <div class="field-group">
+                    <label class="field-label" for="email">Adres e-mail <span class="req">*</span></label>
+                    <input class="ankieta-input" type="email" id="email" placeholder="adres@email.pl" autocomplete="email">
+                    <span class="field-error" id="err-email">Podaj prawidłowy adres e-mail.</span>
+                </div>
+                <div class="field-group">
+                    <label class="field-label" for="telefon">Telefon <span class="opt">(opcjonalnie)</span></label>
+                    <input class="ankieta-input" type="tel" id="telefon" placeholder="+48 000 000 000" autocomplete="tel">
+                </div>
+            </div>
+
+            <!-- Data urodzenia -->
+            <div class="field-row">
+                <div class="field-group">
+                    <label class="field-label" for="dataUrodzenia">Data urodzenia <span class="req">*</span></label>
+                    <input class="ankieta-input" type="date" id="dataUrodzenia" max="">
+                    <span class="field-error" id="err-dataUrodzenia">Data urodzenia jest wymagana.</span>
+                </div>
+                <div class="field-group">
+                    <label class="field-label" for="miasto">Miasto zamieszkania <span class="req">*</span></label>
+                    <input class="ankieta-input" type="text" id="miasto" placeholder="np. Warszawa">
+                    <span class="field-error" id="err-miasto">Podaj miasto zamieszkania.</span>
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!-- Płeć (radio) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <span class="field-label">Płeć</span>
+                    <div class="radio-group inline" id="plec">
+                        <label class="radio-label">
+                            <input type="radio" name="plec" value="kobieta">
+                            <span class="radio-custom"></span>
+                            Kobieta
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="plec" value="mezczyzna">
+                            <span class="radio-custom"></span>
+                            Mężczyzna
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="plec" value="inne">
+                            <span class="radio-custom"></span>
+                            Inne / nie podaję
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!-- DOŚWIADCZENIE -->
+        <fieldset class="ankieta-fieldset">
+            <legend class="ankieta-legend">Doświadczenie zawodowe</legend>
+
+            <!--  Stanowisko (zagnieżdżony select) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <label class="field-label" for="stanowisko">Stanowisko, o które się ubiegasz <span class="req">*</span></label>
+                    <select class="ankieta-select" id="stanowisko">
+                        <option value="">— wybierz —</option>
+                        <optgroup label="Złotnictwo & Rzemiosło">
+                            <option value="zlotnik">Złotnik / Jubiler</option>
+                            <option value="grawer">Grawer</option>
+                            <option value="odlewnik">Specjalista odlewnictwa</option>
+                            <option value="polernik">Polernik biżuterii</option>
+                        </optgroup>
+                        <optgroup label="Projektowanie">
+                            <option value="projektant">Projektant biżuterii</option>
+                            <option value="cad">Projektant CAD / 3D</option>
+                            <option value="art-director">Art Director</option>
+                        </optgroup>
+                        <optgroup label="Technologia Wearables">
+                            <option value="inzynier-nfc">Inżynier NFC / RFID</option>
+                            <option value="mechatronik">Mechatronik</option>
+                            <option value="elektronik">Elektronik miniaturowy</option>
+                        </optgroup>
+                        <optgroup label="Sprzedaż & Obsługa">
+                            <option value="doradca">Doradca klienta</option>
+                            <option value="gemmolog">Gemmolog</option>
+                            <option value="marketing">Specjalista marketingu</option>
+                        </optgroup>
+                        <optgroup label="Inne">
+                            <option value="staz">Staż / Praktyki</option>
+                            <option value="inne">Inne stanowisko</option>
+                        </optgroup>
+                    </select>
+                    <span class="field-error" id="err-stanowisko">Wybierz stanowisko.</span>
+                </div>
+            </div>
+
+            <!-- Tryb współpracy (zagnieżdżony select) -->
+            <div class="field-row">
+                <div class="field-group">
+                    <label class="field-label" for="tryb">Preferowany tryb współpracy <span class="req">*</span></label>
+                    <select class="ankieta-select" id="tryb">
+                        <option value="">— wybierz —</option>
+                        <optgroup label="Etat">
+                            <option value="pelny">Pełny etat</option>
+                            <option value="czesc">Część etatu (½)</option>
+                        </optgroup>
+                        <optgroup label="Elastyczne formy">
+                            <option value="b2b">Umowa B2B</option>
+                            <option value="zlecenie">Umowa zlecenie</option>
+                            <option value="projekt">Projekt jednorazowy</option>
+                        </optgroup>
+                    </select>
+                    <span class="field-error" id="err-tryb">Wybierz tryb współpracy.</span>
+                </div>
+
+                <!-- Dostępność (date) -->
+                <div class="field-group">
+                    <label class="field-label" for="dostepnosc">Dostępność od <span class="opt">(data)</span></label>
+                    <input class="ankieta-input" type="date" id="dostepnosc">
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!-- Doświadczenie w latach (range) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <span class="field-label">Staż pracy w branży jubilerskiej / wearables</span>
+                    <div class="range-wrap">
+                        <div class="range-value" id="stazValue">3 lata</div>
+                        <input type="range" id="staz" min="0" max="30" value="3" step="1"
+                               oninput="updateStaz(this.value)">
+                        <div class="range-labels">
+                            <span>0 lat (brak)</span>
+                            <span>15 lat</span>
+                            <span>30+ lat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specjalizacje (checkbox) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <span class="field-label">Obszary specjalizacji <span class="opt">(zaznacz wszystkie pasujące)</span></span>
+                    <div class="check-group inline" id="specjalizacje">
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="zloto">
+                            <span class="check-custom"></span>
+                            Złoto / Srebro
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="platyna">
+                            <span class="check-custom"></span>
+                            Platyna
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="kamienie">
+                            <span class="check-custom"></span>
+                            Kamienie szlachetne
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="nfc">
+                            <span class="check-custom"></span>
+                            NFC / Smart Jewelry
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="3d">
+                            <span class="check-custom"></span>
+                            Druk 3D / CAD
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="renowacja">
+                            <span class="check-custom"></span>
+                            Renowacja / Antyki
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="specjalizacje" value="bespoke">
+                            <span class="check-custom"></span>
+                            Biżuteria bespoke
+                        </label>
+                    </div>
+                    <span class="field-error" id="err-specjalizacje">Wybierz co najmniej jedną specjalizację.</span>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!-- PREFERENCJE -->
+        <fieldset class="ankieta-fieldset">
+            <legend class="ankieta-legend">Preferencje i osobowość</legend>
+
+            <!-- lokalizacja salonu (radio) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <span class="field-label">Preferowana lokalizacja pracy <span class="req">*</span></span>
+                    <div class="radio-group inline" id="lokalizacja">
+                        <label class="radio-label">
+                            <input type="radio" name="lokalizacja" value="zlote-tarasy">
+                            <span class="radio-custom"></span>
+                            Salon Złote Tarasy
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="lokalizacja" value="nowy-swiat">
+                            <span class="radio-custom"></span>
+                            Salon Nowy Świat
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="lokalizacja" value="atelier">
+                            <span class="radio-custom"></span>
+                            Atelier (ul. Złota 12)
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="lokalizacja" value="dowolna">
+                            <span class="radio-custom"></span>
+                            Dowolna
+                        </label>
+                    </div>
+                    <span class="field-error" id="err-lokalizacja">Wybierz preferowaną lokalizację.</span>
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!-- Ocena umiejętności (range) -->
+            <div class="field-row">
+                <div class="field-group">
+                    <span class="field-label">Ocena własnych umiejętności rękodzielniczych</span>
+                    <div class="range-wrap">
+                        <div class="range-value" id="umiejetnosciValue">7 / 10</div>
+                        <input type="range" id="umiejetnosci" min="1" max="10" value="7" step="1"
+                               oninput="updateUmiejetnosci(this.value)">
+                        <div class="range-labels">
+                            <span>Początkujący</span>
+                            <span>Ekspert</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--  Ulubiony metal (kolor) -->
+                <div class="field-group">
+                    <span class="field-label">Preferowany kolor metalu szlachetnego</span>
+                    <div class="color-wrap">
+                        <input type="color" class="ankieta-color" id="kolorMetalu" value="#d4af37"
+                               oninput="updateKolor(this.value)">
+                        <span class="color-name" id="kolorNazwa">Złoto klasyczne (#d4af37)</span>
+                    </div>
+                    <span class="field-hint">Wybierz kolor, który najlepiej reprezentuje Twój styl pracy</span>
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!--  Języki (checkbox) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <span class="field-label">Znane języki obce</span>
+                    <div class="check-group inline">
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="en">
+                            <span class="check-custom"></span>
+                            Angielski
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="de">
+                            <span class="check-custom"></span>
+                            Niemiecki
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="fr">
+                            <span class="check-custom"></span>
+                            Francuski
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="it">
+                            <span class="check-custom"></span>
+                            Włoski
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="ru">
+                            <span class="check-custom"></span>
+                            Rosyjski
+                        </label>
+                        <label class="check-label">
+                            <input type="checkbox" name="jezyki" value="inny">
+                            <span class="check-custom"></span>
+                            Inny
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!--  PORTFOLIO -->
+        <fieldset class="ankieta-fieldset">
+            <legend class="ankieta-legend">Portfolio i list motywacyjny</legend>
+
+            <!-- URL portfolio -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <label class="field-label" for="portfolio">Link do portfolio / strony <span class="opt">(opcjonalnie)</span></label>
+                    <input class="ankieta-input" type="url" id="portfolio" placeholder="https://twoje-portfolio.pl">
+                    <span class="field-hint">Instagram, Behance, własna strona — cokolwiek pokazuje Twoją pracę</span>
+                </div>
+            </div>
+
+            <!-- Plik CV -->
+            <div class="field-row">
+                <div class="field-group">
+                    <span class="field-label">CV / Portfolio (plik) <span class="req">*</span></span>
+                    <div class="file-wrap">
+                        <label class="file-label-btn" for="cvPlik">
+                            <i class="fa-solid fa-paperclip"></i>
+                            Wybierz plik PDF lub DOC
+                        </label>
+                        <input type="file" id="cvPlik" accept=".pdf,.doc,.docx,.jpg,.png"
+                               onchange="updateFileName(this)">
+                        <div class="file-name-display" id="cvFileName">Nie wybrano pliku</div>
+                        <span class="field-error" id="err-cvPlik">CV jest wymagane.</span>
+                    </div>
+                </div>
+
+                <!-- Drugie portfolio -->
+                <div class="field-group">
+                    <span class="field-label">Zdjęcia prac <span class="opt">(opcjonalnie)</span></span>
+                    <div class="file-wrap">
+                        <label class="file-label-btn" for="zdjeciaPrac">
+                            <i class="fa-solid fa-images"></i>
+                            Dodaj zdjęcia (JPG / PNG)
+                        </label>
+                        <input type="file" id="zdjeciaPrac" accept=".jpg,.jpeg,.png,.webp" multiple
+                               onchange="updateFileNameMulti(this)">
+                        <div class="file-name-display" id="zdjeciaFileName">Nie wybrano pliku</div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!-- Skąd o nas (select) -->
+            <div class="field-row">
+                <div class="field-group">
+                    <label class="field-label" for="zrodlo">Skąd dowiedziałeś/aś się o Wermon?</label>
+                    <select class="ankieta-select" id="zrodlo">
+                        <option value="">— wybierz —</option>
+                        <option value="instagram">Instagram / Social Media</option>
+                        <option value="znajomy">Polecenie znajomego</option>
+                        <option value="targi">Targi biżuterii / branżowe</option>
+                        <option value="google">Google / Wyszukiwarka</option>
+                        <option value="prasa">Prasa / magazyny</option>
+                        <option value="inne">Inne</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <!-- Oczekiwania finansowe -->
+                    <label class="field-label" for="wynagrodzenie">Oczekiwane wynagrodzenie netto / mies.</label>
+                    <input class="ankieta-input" type="number" id="wynagrodzenie"
+                           placeholder="np. 6500" min="0" step="100">
+                    <span class="field-hint">Podaj kwotę w PLN (netto)</span>
+                </div>
+            </div>
+
+            <hr class="field-divider">
+
+            <!-- List motywacyjny (textarea) -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <label class="field-label" for="motywacja">List motywacyjny / Opis doświadczeń <span class="req">*</span></label>
+                    <textarea class="ankieta-textarea" id="motywacja" rows="5"
+                              placeholder="Opisz swoje doświadczenie z biżuterią, rzemiosłem jubilerskim lub technologią wearables. Co sprawia, że chcesz pracować właśnie w Wermon?"
+                              oninput="updateCharCount(this)"></textarea>
+                    <div style="display:flex; justify-content:space-between; margin-top:4px;">
+                        <span class="field-error" id="err-motywacja">List motywacyjny jest wymagany (min. 50 znaków).</span>
+                        <span class="field-hint" id="charCount">0 / min. 50 znaków</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Zgody -->
+            <div class="field-row full">
+                <div class="field-group">
+                    <label class="check-label" style="align-items:flex-start; gap:12px;">
+                        <input type="checkbox" id="rodo">
+                        <span class="check-custom" style="margin-top:2px; flex-shrink:0;"></span>
+                        <span style="font-size:0.7rem; color:#666; line-height:1.7;">
+                            Wyrażam zgodę na przetwarzanie moich danych osobowych przez Wermon sp. z o.o. w celu przeprowadzenia procesu rekrutacji, zgodnie z Rozporządzeniem RODO. <span class="req">*</span>
+                        </span>
+                    </label>
+                    <span class="field-error" id="err-rodo">Zgoda na przetwarzanie danych jest wymagana.</span>
+                </div>
+            </div>
+
+        </fieldset>
+
+        <!-- PRZYCISK WYŚLIJ -->
+        <div class="form-submit-area">
+            <div class="form-progress" id="formProgress">
+                <div class="progress-line"><div class="progress-line-fill" id="progressFill"></div></div>
+                <div class="progress-step active" id="step1">
+                    <div class="progress-dot">01</div>
+                    <span class="progress-label">Dane osobowe</span>
+                </div>
+                <div class="progress-step" id="step2">
+                    <div class="progress-dot">02</div>
+                    <span class="progress-label">Doświadczenie</span>
+                </div>
+                <div class="progress-step" id="step3">
+                    <div class="progress-dot">03</div>
+                    <span class="progress-label">Preferencje</span>
+                </div>
+                <div class="progress-step" id="step4">
+                    <div class="progress-dot">04</div>
+                    <span class="progress-label">Portfolio</span>
+                </div>
+            </div>
+            <button type="submit" class="btn-wspolpraca">
+                Wyślij zgłoszenie &nbsp;<i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+    </form>
+
+    <!-- SUKCES -->
+    <div class="success-overlay" id="successOverlay">
+        <span class="success-icon"><i class="fa-solid fa-gem"></i></span>
+        <h3>Dziękujemy za zgłoszenie</h3>
+        <p>Twoja aplikacja została przesłana do zespołu Wermon.<br>
+        Odpiszemy na adres e-mail w ciągu 5 dni roboczych.<br><br>
+        <em style="color:var(--gold); letter-spacing:2px;">— Zespół Wermon</em></p>
+    </div>
+
+    <div class="premium-container" style="margin-top:40px;">
+        <hr>
+        <a href="#"><i><small>Wróć na początek strony</small></i></a>
+        <hr>
+    </div>
+
+</div>
+</main>
+
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+
+<script src="./app/app.js"></script>
+<script src="./app/walidacja.js"></script>
+</body>
+</html>

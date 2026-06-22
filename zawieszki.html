@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zawieszki — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+   <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Zawieszki</h2>
+        <p>Mała forma, wielki charakter. Zawieszki Wermon — serca, krzyżyki, monogramy i unikaty na zamówienie. W złocie i brylantach.</p>
+    </div>
+
+    <!-- Mini mozaika -->
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;">
+        <div class="mini-mosaic">
+            <div class="mm"><img src="./images/zawieszki/zawieszka baner (2).jpg" alt="Zawieszka serce"><div class="mm-caption"><span>Serce w złocie</span></div></div>
+            <div class="mm"><img src="./images/zawieszki/zawieszka baner (1).jpg" alt="Zawieszka krzyż"></div>
+            <div class="mm"><img src="./images/zawieszki/zawieszka baner (3).jpg" alt="Zawieszka inicjały"></div>
+            <div class="mm"><img src="./images/zawieszki/zawieszka baner (4).jpg" alt="Zawieszka brylant"></div>
+            <div class="mm"><img src="./images/zawieszki/zawieszka baner (5).jpg" alt="Zawieszka figura"></div>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (1).jpg" alt="Zawieszka Serce"></div>
+            <p class="product-name">Zawieszka Serce</p>
+            <p class="product-material">Złoto 585 · brylant 0,08 ct</p>
+            <p class="product-price">1 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Serce','1 800 zł','Złoto 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (2).jpg" alt="Zawieszka Krzyżyk"></div>
+            <p class="product-name">Zawieszka Krzyżyk</p>
+            <p class="product-material">Złoto 750 · wzór klasyczny</p>
+            <p class="product-price">2 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Krzyżyk','2 600 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (3).jpg" alt="Zawieszka Monogram"></div>
+            <p class="product-name">Zawieszka Monogram</p>
+            <p class="product-material">Złoto białe 750 · litery na zamówienie</p>
+            <p class="product-price">3 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Monogram','3 200 zł','Złoto białe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (4).jpg" alt="Zawieszka Gwiazdka"></div>
+            <p class="product-name">Zawieszka Gwiazda</p>
+            <p class="product-material">Złoto różowe 585 · 5 brylantów</p>
+            <p class="product-price">2 100 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Gwiazda','2 100 zł','Złoto różowe 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (5).jpg" alt="Zawieszka Aqua"></div>
+            <p class="product-name">Zawieszka Aqua</p>
+            <p class="product-material">Złoto 750 · akwamaryn</p>
+            <p class="product-price">3 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Aqua','3 800 zł','Złoto 750 · akwamaryn')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/zawieszki/zawieszka (6).jpg" alt="Zawieszka Owl"></div>
+            <p class="product-name">Zawieszka Sowa</p>
+            <p class="product-material">Złoto 750 · emalia · brylant</p>
+            <p class="product-price">4 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Zawieszka Sowa','4 400 zł','Złoto 750 · emalia')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+<script src="./app/app.js"></script>
+</body>
+</html>

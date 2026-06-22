@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolczyki — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+  <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Kolczyki</h2>
+        <p>Blask przy twarzy. Od subtelnych sztyfcików po efektowne żyrandole — złoto, brylanty i kamienie szlachetne na każdą okazję.</p>
+    </div>
+
+    <!-- Baner środkowy -->
+    <div class="mid-banner">
+        <img src="./images/kolczyki/baner kolczyki.jpg" alt="Kolczyki Wermon kolekcja">
+        <div class="mid-banner-shade"></div>
+        <div class="mid-banner-text">
+            <h3>Haute Joaillerie</h3>
+            <p>Kolekcja 2024 · złoto i brylanty</p>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/kolczyki (1).jpg" alt="Kolczyki Diament"></div>
+            <p class="product-name">Kolczyki Diament</p>
+            <p class="product-material">Złoto białe 750 · brylanty 0,40 ct</p>
+            <p class="product-price">7 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Kolczyki Diament','7 800 zł','Złoto białe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/kolczyki (2).jpg" alt="Kolczyki Perła"></div>
+            <p class="product-name">Kolczyki Perła</p>
+            <p class="product-material">Złoto 585 · perła Akoya</p>
+            <p class="product-price">3 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Kolczyki Perła','3 200 zł','Złoto 585 · perła')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/kolczyki (3).jpg" alt="Kolczyki Szmaragd"></div>
+            <p class="product-name">Kolczyki Szmaragd</p>
+            <p class="product-material">Złoto 750 · szmaragdy</p>
+            <p class="product-price">11 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Kolczyki Szmaragd','11 400 zł','Złoto 750 · szmaragdy')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/kolczyki (4).jpg" alt="Kolczyki Różowe"></div>
+            <p class="product-name">Kolczyki Różowe</p>
+            <p class="product-material">Złoto różowe 585 · kwarc różowy</p>
+            <p class="product-price">2 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Kolczyki Różowe','2 600 zł','Złoto różowe 585')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/kolczyki.jpg" alt="Żyrandole Pavé"></div>
+            <p class="product-name">Żyrandole Pavé</p>
+            <p class="product-material">Złoto białe 750 · 48 brylantów</p>
+            <p class="product-price">18 000 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Żyrandole Pavé','18 000 zł','Złoto białe 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/kolczyki/koczyki (5).jpg" alt="Kolczyki Tęcza"></div>
+            <p class="product-name">Kolczyki Tęcza</p>
+            <p class="product-material">Złoto 750 · kamienie tęczowe</p>
+            <p class="product-price">6 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Kolczyki Tęcza','6 200 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+<script src="./app/app.js"></script>
+</body>
+</html>

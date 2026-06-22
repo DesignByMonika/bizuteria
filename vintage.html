@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✦ Vintage — Wermon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<div class="preloader">
+    <div class="preloader-dots"></div>
+</div>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+  <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <!-- ══ 1. HERO ══ -->
+    <section class="v-hero" data-parallax="0.38">
+        <div class="v-hero-bg" data-parallax-el></div>
+        <div class="v-hero-shade"></div>
+
+        <div class="v-frame">
+            <div class="v-corner v-corner--tl"></div>
+            <div class="v-corner v-corner--tr"></div>
+            <div class="v-corner v-corner--bl"></div>
+            <div class="v-corner v-corner--br"></div>
+        </div>
+
+        <svg class="v-ornament-top" width="220" height="28" viewBox="0 0 220 28" fill="none">
+            <line x1="0" y1="14" x2="80" y2="14" stroke="#d4af37" stroke-width="0.5"/>
+            <polygon points="85,14 90,8 95,14 90,20" fill="rgba(212,175,55,0.5)"/>
+            <polygon points="100,14 105,8 110,14 105,20" fill="rgba(212,175,55,0.3)"/>
+            <polygon points="110,7 115,14 110,21 105,14" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="0.7"/>
+            <polygon points="115,14 120,8 125,14 120,20" fill="rgba(212,175,55,0.3)"/>
+            <polygon points="125,14 130,8 135,14 130,20" fill="rgba(212,175,55,0.5)"/>
+            <line x1="140" y1="14" x2="220" y2="14" stroke="#d4af37" stroke-width="0.5"/>
+        </svg>
+
+        <svg class="v-fan v-fan--left" viewBox="0 0 180 320" fill="none">
+            <g stroke="#d4af37" stroke-width="0.5">
+                <line x1="0" y1="160" x2="160" y2="0"/>
+                <line x1="0" y1="160" x2="170" y2="40"/>
+                <line x1="0" y1="160" x2="175" y2="80"/>
+                <line x1="0" y1="160" x2="176" y2="120"/>
+                <line x1="0" y1="160" x2="176" y2="160"/>
+                <line x1="0" y1="160" x2="175" y2="200"/>
+                <line x1="0" y1="160" x2="170" y2="240"/>
+                <line x1="0" y1="160" x2="160" y2="280"/>
+                <line x1="0" y1="160" x2="140" y2="314"/>
+                <path d="M80,30 Q130,100 140,160 Q130,220 80,290" stroke-width="0.4"/>
+                <path d="M40,60 Q100,120 110,160 Q100,200 40,260" stroke-width="0.3"/>
+            </g>
+        </svg>
+        <svg class="v-fan v-fan--right" viewBox="0 0 180 320" fill="none">
+            <g stroke="#d4af37" stroke-width="0.5">
+                <line x1="0" y1="160" x2="160" y2="0"/>
+                <line x1="0" y1="160" x2="170" y2="40"/>
+                <line x1="0" y1="160" x2="175" y2="80"/>
+                <line x1="0" y1="160" x2="176" y2="120"/>
+                <line x1="0" y1="160" x2="176" y2="160"/>
+                <line x1="0" y1="160" x2="175" y2="200"/>
+                <line x1="0" y1="160" x2="170" y2="240"/>
+                <line x1="0" y1="160" x2="160" y2="280"/>
+                <line x1="0" y1="160" x2="140" y2="314"/>
+                <path d="M80,30 Q130,100 140,160 Q130,220 80,290" stroke-width="0.4"/>
+                <path d="M40,60 Q100,120 110,160 Q100,200 40,260" stroke-width="0.3"/>
+            </g>
+        </svg>
+
+        <div class="v-hero-content">
+            <span class="v-eyebrow">Wermon &nbsp;·&nbsp; Kolekcja antyczna &nbsp;·&nbsp; Belle Époque · Art Deco</span>
+            <h1 class="v-hero-title">Vintage</h1>
+            <p class="v-hero-tagline">„Biżuteria, która przeżyła epoki."</p>
+        </div>
+
+        <svg class="v-ornament-bot" width="220" height="28" viewBox="0 0 220 28" fill="none">
+            <line x1="0" y1="14" x2="80" y2="14" stroke="#d4af37" stroke-width="0.5"/>
+            <polygon points="85,14 90,8 95,14 90,20" fill="rgba(212,175,55,0.5)"/>
+            <polygon points="100,14 105,8 110,14 105,20" fill="rgba(212,175,55,0.3)"/>
+            <polygon points="110,7 115,14 110,21 105,14" fill="none" stroke="rgba(212,175,55,0.4)" stroke-width="0.7"/>
+            <polygon points="115,14 120,8 125,14 120,20" fill="rgba(212,175,55,0.3)"/>
+            <polygon points="125,14 130,8 135,14 130,20" fill="rgba(212,175,55,0.5)"/>
+            <line x1="140" y1="14" x2="220" y2="14" stroke="#d4af37" stroke-width="0.5"/>
+        </svg>
+    </section>
+
+    <!-- ══ 2. INTRO ══ -->
+    <div class="v-intro">
+        <h2 class="gold-title">Dziedzictwo złotnictwa</h2>
+        <p>Każdy przedmiot w kolekcji Vintage przeszedł weryfikację autentyczności w atelier Wermon. Gemmolog, złotnik i historyk sztuki wspólnie oceniają proweniencję, stan zachowania i wartość. Trafiają tu tylko okazy zasługujące na nowe życie.</p>
+        <div class="v-intro-pillars">
+            <div class="v-pillar"><div class="v-pillar-line"></div><span>Autentyczność</span></div>
+            <div class="v-pillar"><div class="v-pillar-line"></div><span>Proweniencja</span></div>
+            <div class="v-pillar"><div class="v-pillar-line"></div><span>Wieczna wartość</span></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- ══ 3. FLAGSHIP ══ -->
+    <section class="v-flagship">
+        <div class="v-flagship-inner">
+            <div class="v-flagship-text">
+                <span class="v-eyebrow">Perła kolekcji · Art Deco · ok. 1928</span>
+                <h2>Brosza Soleil<br><em>Platyna &amp; brylanty</em></h2>
+                <span class="v-flagship-mood">„Światło zatrzymane w kamieniu."</span>
+                <p>Platyna 950 z brylanami old-cut i onyksem — prawdziwy skarb epoki Art Deco. Każdy kamień certyfikowany przez gemmologa Wermon. Dokumentacja proweniencji i certyfikat autentyczności w komplecie.</p>
+                <ul class="v-flagship-list">
+                    <li>Platyna 950 — oryginalna oprawa</li>
+                    <li>Brylanty old-cut ok. 2,4 ct łącznie</li>
+                    <li>Onyks kaboszon — Paryż, 1928</li>
+                    <li>Certyfikat gemmologiczny IGI</li>
+                    <li>Dokumentacja proweniencji</li>
+                    <li>Gwarancja autentyczności Wermon</li>
+                </ul>
+                <a href="kontakt.html" class="v-btn-bord">Zapytaj o dostępność</a>
+            </div>
+            <div class="v-flagship-visual">
+                <img src="images/vintage/banermini vintage.jpg" alt="Brosza Art Deco platyna brylanty">
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ 4. CECHY ══ -->
+    <section class="v-features">
+        <div class="v-section-head">
+            <h1>Gwarancja Wermon</h1>
+            <h2 class="gold-title">Jakość bez kompromisów</h2>
+        </div>
+        <div class="v-feat-grid">
+            <div class="v-feat-card">
+                <span class="v-feat-icon"><i class="fa-solid fa-certificate"></i></span>
+                <span class="v-feat-name">Certyfikat autentyczności</span>
+                <p class="v-feat-desc">Każdy przedmiot badany przez gemmologa i historyka sztuki. Certyfikat z opisem kamieni, stopów i proweniencji.</p>
+            </div>
+            <div class="v-feat-card">
+                <span class="v-feat-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                <span class="v-feat-name">Analiza gemmologiczna</span>
+                <p class="v-feat-desc">Fluorescencja UV, spektroskopia i analiza składu stopu — pełna weryfikacja każdego egzemplarza w naszym laboratorium.</p>
+            </div>
+            <div class="v-feat-card">
+                <span class="v-feat-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                <span class="v-feat-name">Renowacja &amp; konserwacja</span>
+                <p class="v-feat-desc">Przywracamy dawny blask bez ingerencji w oryginalną strukturę. Praca wyłącznie tradycyjnymi metodami złotniczymi.</p>
+            </div>
+            <div class="v-feat-card">
+                <span class="v-feat-icon"><i class="fa-solid fa-rotate-left"></i></span>
+                <span class="v-feat-name">Zwrot w 30 dni</span>
+                <p class="v-feat-desc">Sprzedaż z fakturą VAT i pełnym prawem zwrotu. Biżuteria dociera w oryginalnym pudełku z całą dokumentacją.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ 5. SPECS ══ -->
+    <section class="v-specs">
+        <div class="v-specs-inner">
+            <div class="v-specs-head">
+                <span class="v-eyebrow">Kolekcja w liczbach</span>
+                <h2>Epoki i wartości</h2>
+            </div>
+            <div class="v-specs-grid">
+                <div class="v-spec"><span class="v-spec-num">200+</span><span class="v-spec-label">lat najstarszego egzemplarza</span></div>
+                <div class="v-spec"><span class="v-spec-num">3</span><span class="v-spec-label">epoki — Empire, Belle Époque, Art Deco</span></div>
+                <div class="v-spec"><span class="v-spec-num">950</span><span class="v-spec-label">próba platyny — najwyższy standard</span></div>
+                <div class="v-spec"><span class="v-spec-num">30</span><span class="v-spec-label">dni gwarancja zwrotu</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══ 6. KOLEKCJA ══ -->
+    <section class="v-collection">
+        <div class="v-section-head">
+            <h1>Wyselekcjonowana kolekcja</h1>
+            <h2 class="gold-title">✦ Vintage Wermon</h2>
+        </div>
+
+        <!-- Karty w stylu wearables — products-grid -->
+        <div class="products-grid">
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Art Deco · 1928</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (2).jpg" alt="Brosza Soleil Art Deco">
+                </div>
+                <p class="product-name">Brosza Soleil</p>
+                <span class="v-product-mood">„Światło zatrzymane w kamieniu."</span>
+                <p class="product-material">Platyna 950 · brylanty old-cut · onyks</p>
+                <p class="product-price">18 400 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Brosza Soleil (1928)','18 400 zł','Platyna 950 · brylanty · onyks')">Dodaj do koszyka</button>
+            </div>
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Belle Époque · 1905</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (6).jpg" alt="Naszyjnik Belle Époque">
+                </div>
+                <p class="product-name">Naszyjnik Fleur</p>
+                <span class="v-product-mood">„Perły i kwiat wieczności w złocie."</span>
+                <p class="product-material">Złoto 750 · perły naturalne · enamel</p>
+                <p class="product-price">28 000 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Naszyjnik Fleur (1905)','28 000 zł','Złoto 750 · perły · enamel')">Dodaj do koszyka</button>
+            </div>
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Art Deco · 1932</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (3).jpg" alt="Pierścionek Art Deco szmaragd">
+                </div>
+                <p class="product-name">Pierścionek Géométrie</p>
+                <span class="v-product-mood">„Geometria doskonałości."</span>
+                <p class="product-material">Platyna · szmaragd · brylanty baguette</p>
+                <p class="product-price">42 000 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Pierścionek Géométrie (1932)','42 000 zł','Platyna · szmaragd')">Dodaj do koszyka</button>
+            </div>
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Secesja · 1898</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (4).jpg" alt="Bransoleta Secesja">
+                </div>
+                <p class="product-name">Bransoleta Libelula</p>
+                <span class="v-product-mood">„Taniec złota i powiewnych kryształów."</span>
+                <p class="product-material">Złoto 585 · enamel cloisonné · szafiry</p>
+                <p class="product-price">22 500 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Bransoleta Libelula (1898)','22 500 zł','Złoto 585 · enamel')">Dodaj do koszyka</button>
+            </div>
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Art Deco · 1924</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (5).jpg" alt="Kolczyki Art Deco rubin">
+                </div>
+                <p class="product-name">Kolczyki Cascade</p>
+                <span class="v-product-mood">„Kaskada blasku i koloru."</span>
+                <p class="product-material">Platyna · brylanty old European cut · rubin</p>
+                <p class="product-price">34 800 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Kolczyki Cascade (1924)','34 800 zł','Platyna · brylanty · rubin')">Dodaj do koszyka</button>
+            </div>
+
+            <div class="product-card">
+                <div class="v-ribbon">Oryginalny</div>
+                <span class="v-badge">Empire · ok. 1815</span>
+                <div class="vint-thumb-card">
+                    <img src="/images/vintage/vintage (1).jpg" alt="Kamea Empire złoto">
+                </div>
+                <p class="product-name">Kamea Napoleon</p>
+                <span class="v-product-mood">„Historia wyrzeźbiona."</span>
+                <p class="product-material">Złoto 18k · chalcedon · kamea rzeźbiona</p>
+                <p class="product-price">56 000 zł</p>
+                <button class="btn-vint" onclick="dodajDoKoszyka(this,'Kamea Napoleon (ok. 1815)','56 000 zł','Złoto 18k · chalcedon')">Dodaj do koszyka</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ══ 7. CTA ══ -->
+    <hr>
+    <div class="v-cta">
+        <h2 class="gold-title">Posiadasz biżuterię vintage?</h2>
+        <p>Skupujemy i wyceniamy antyczną biżuterię</p>
+        <a href="kontakt.html" class="v-btn-gold">Umów bezpłatną wycenę</a>
+    </div>
+
+    <hr>
+    <div class="premium-container" style="background: var(--vin-cream);">
+        <a href="#"><i><small>Wróć na początek strony</small></i></a>
+    </div>
+    <hr>
+
+</main>
+
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+
+<script src="./app/app.js"></script>
+</body>
+</html>

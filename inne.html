@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inne — Wermon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+  <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="premium-container">
+        <h2 class="gold-title reveal">Inne</h2>
+        <p>Biżuteria poza kategoriami — diademy, tiары, wisiorki, ozdoby do włosów i unikalne obiekty jubilerskie. Wermon bez granic formy.</p>
+    </div>
+
+    <!-- Quad gallery -->
+    <div style="max-width:960px;margin:0 auto;padding:0 24px;">
+        <div class="quad-gallery">
+            <div class="qc"><img src="./images/inne/baner inne (1).jpg" alt="Diadem"><span class="qc-label">Diademy</span></div>
+            <div class="qc"><img src="./images/inne/baner inne (3).jpg" alt="Ozdoby do włosów"><span class="qc-label">Ozdoby</span></div>
+            <div class="qc"><img src="./images/inne/baner inne (4).jpg" alt="Unikaty"><span class="qc-label">Unikaty</span></div>
+            <div class="qc"><img src="./images/inne/baner inne (2).jpg" alt="Komplety"><span class="qc-label">Komplety</span></div>
+        </div>
+    </div>
+
+    <div class="w-collection">
+    <div class="products-grid">
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/skarby.jpg" alt="Diadem Złoty"></div>
+            <p class="product-name">Diadem Aurore</p>
+            <p class="product-material">Złoto 750 · brylanty 2,40 ct</p>
+            <p class="product-price">48 000 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Diadem Aurore','48 000 zł','Złoto 750 · brylanty')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/inne (1).jpg" alt="Ozdoba do włosów"></div>
+            <p class="product-name">Szpila Złota</p>
+            <p class="product-material">Złoto 585 · perła · brylant</p>
+            <p class="product-price">2 400 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Szpila Złota','2 400 zł','Złoto 585 · perła')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/bizuteria.jpg" alt="Komplet biżuterii"></div>
+            <p class="product-name">Komplet Rubinowy</p>
+            <p class="product-material">Złoto 750 · rubiny · kolczyki + naszyjnik</p>
+            <p class="product-price">34 000 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Komplet Rubinowy','34 000 zł','Złoto 750 · rubiny')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/spinka do wlosow.jpg" alt="Wisiorek Unikalny"></div>
+            <p class="product-name">Wisiorek Unikat</p>
+            <p class="product-material">Złoto 750 · kamień nieregularny</p>
+            <p class="product-price">5 600 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Wisiorek Unikat','5 600 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/inne (2).jpg" alt="Klips do krawata"></div>
+            <p class="product-name">Klips do Krawata</p>
+            <p class="product-material">Złoto 750 · grawerunek</p>
+            <p class="product-price">3 200 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Klips do Krawata','3 200 zł','Złoto 750')">Dodaj do koszyka</button>
+        </div>
+        <div class="product-card reveal">
+            <div class="img-wrap"><img src="./images/inne/klamra.jpg" alt="Bransoletka nogi"></div>
+            <p class="product-name">Anklet Złoty</p>
+            <p class="product-material">Złoto różowe 585 · 24 cm</p>
+            <p class="product-price">1 800 zł</p>
+            <button class="btn-add" onclick="dodajDoKoszyka(this,'Anklet Złoty','1 800 zł','Złoto różowe 585')">Dodaj do koszyka</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="premium-container"><hr><a href="#"><i><small>Wróć na początek strony</small></i></a><hr></div>
+</main>
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+<script src="./app/app.js"></script>
+</body>
+</html>

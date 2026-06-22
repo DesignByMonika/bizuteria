@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk — Wermon</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300&family=Montserrat:wght@200;300;400;500&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+ 
+</head>
+<body>
+
+<div class="preloader" id="preloader">
+    <div class="preloader-dots"></div>
+</div>
+
+<header id="top">
+    <div class="logo">
+        <a href="index.html">
+            <img src="./images/logo/logobizuteria.png" alt="Logo Wermon" id="logo-img">
+            <div class="logo-text">WERMON</div>
+        </a>
+    </div>
+   <nav>
+        <button class="hamburger" id="menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="main-nav">
+            <li><a href="index.html">Strona Główna</a></li>
+            <li class="dropdown">
+                <a href="bizuteria.html" class="dropbtn">
+                    Biżuteria <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="dropdown-content">
+                    <a href="pierscionki.html">Pierścionki</a>
+                    <a href="obraczki.html">Obrączki</a>
+                    <a href="sygnety.html">Sygnety</a>
+                    <a href="kolczyki.html">Kolczyki</a>
+                    <a href="naszyjniki.html">Naszyjniki</a>
+                    <a href="lancuszki.html">Łańcuszki</a>
+                    <a href="zawieszki.html">Zawieszki</a>
+                    <a href="do_wlosow.html">Do włosów</a>
+                    <a href="branzoletki.html">Branzoletki</a>
+                    <a href="broszki.html">Broszki</a>
+                    <a href="spinki.html">Spinki</a>
+                    <a href="inne.html">Inne</a>
+                                        <hr>
+                    <a href="bizuteria.html" class="dropdown-vintage">✦ Wszystko</a>
+                </div>
+            </li>
+            <li><a href="kolekcje.html">Kolekcje</a></li>
+            <li><a href="wearables.html">Wearables</a></li>
+            <li><a href="zegarki.html">Zegarki</a></li>
+            <li><a href="vintage.html">Vintage</a></li>
+            <li><a href="skup.html">Atelier &amp; Skup</a></li>
+            <li><a href="wspolpraca.html">Współpraca</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li class="nav-cart">
+                <a href="koszyk.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-badge" class="cart-count">0</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<div class="cart-page">
+
+    <div class="cart-header">
+        <span class="cart-eyebrow">Wermon &nbsp;·&nbsp; Twój wybór</span>
+        <h1 class="cart-title">Koszyk</h1>
+    </div>
+
+    <div class="cart-layout">
+
+        <!-- LISTA PRODUKTÓW -->
+        <div>
+
+            <!-- produkt 1 -->
+            <div class="cart-item">
+                <div class="cart-item-thumb">
+                    <img src="./images/kolekcje/aurora/pierścionek Aurora.jpg" alt="Pierścionek Soleil">
+                </div>
+                <div>
+                    <p class="cart-item-name">Pierścionek Soleil</p>
+                    <p class="cart-item-material">Złoto różowe 585 · akwamaryn</p>
+                </div>
+                <div class="cart-item-right">
+                    <p class="cart-item-price">4 200 zł</p>
+                    <div class="qty-row">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-val">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produkt 2 -->
+            <div class="cart-item">
+                <div class="cart-item-thumb">
+                    <img src="./images/kolekcje/aurora/kolczyki Aurora.jpg" alt="Kolczyki Dawn">
+                </div>
+                <div>
+                    <p class="cart-item-name">Kolczyki Dawn</p>
+                    <p class="cart-item-material">Złoto 585 · perła</p>
+                </div>
+                <div class="cart-item-right">
+                    <p class="cart-item-price">5 600 zł</p>
+                    <div class="qty-row">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-val">2</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- produkt 3 -->
+            <div class="cart-item">
+                <div class="cart-item-thumb">
+                    <img src="./images/kolekcje/noir/Kolekcja Noir  (5).jpg" alt="Sygnet Nox">
+                </div>
+                <div>
+                    <p class="cart-item-name">Sygnet Nox</p>
+                    <p class="cart-item-material">Złoto białe 750 · onyks</p>
+                </div>
+                <div class="cart-item-right">
+                    <p class="cart-item-price">8 900 zł</p>
+                    <div class="qty-row">
+                        <button class="qty-btn">−</button>
+                        <span class="qty-val">1</span>
+                        <button class="qty-btn">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UPSELL -->
+            <div class="cart-upsell">
+                <p class="cart-upsell-title">Może Cię zainteresować</p>
+                <div class="upsell-grid">
+
+                    <div class="upsell-card">
+                        <div class="upsell-thumb">
+                            <img src="./images/kolekcje/aurora/naszyjnik Aurora.jpg" alt="Naszyjnik Mist">
+                        </div>
+                        <div class="upsell-body">
+                            <p class="upsell-name">Naszyjnik Mist</p>
+                            <p class="upsell-mat">Złoto różowe 585</p>
+                            <p class="upsell-price">5 600 zł</p>
+                            <a href="naszyjniki.html" class="btn-add" style="display:block;text-align:center;text-decoration:none">Zobacz</a>
+                        </div>
+                    </div>
+
+                    <div class="upsell-card">
+                        <div class="upsell-thumb">
+                            <img src="./images/kolekcje/aurora/branzoletka Aurora.jpg" alt="Bransoleta Halo">
+                        </div>
+                        <div class="upsell-body">
+                            <p class="upsell-name">Bransoleta Y</p>
+                            <p class="upsell-mat">Złoto 585 · perła</p>
+                            <p class="upsell-price">3 400 zł</p>
+                            <a href="branzoletki.html" class="btn-add" style="display:block;text-align:center;text-decoration:none">Zobacz</a>
+                        </div>
+                    </div>
+
+                    <div class="upsell-card">
+                        <div class="upsell-thumb">
+                            <img src="./images/kolekcje/noir/Kolekcja Noir  (6).jpg" alt="Kolczyki Minuit">
+                        </div>
+                        <div class="upsell-body">
+                            <p class="upsell-name">Kolczyki Minuit</p>
+                            <p class="upsell-mat">Złoto białe 750 · onyks</p>
+                            <p class="upsell-price">6 200 zł</p>
+                            <a href="kolczyki.html" class="btn-add" style="display:block;text-align:center;text-decoration:none">Zobacz</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PODSUMOWANIE -->
+        <aside class="cart-summary">
+            <h3>Podsumowanie</h3>
+            <div class="summary-row">
+                <span>Produkty (4)</span>
+                <span>18 700 zł</span>
+            </div>
+            <div class="summary-row">
+                <span>Dostawa</span>
+                <span style="color:var(--gold)">Gratis</span>
+            </div>
+            <div class="summary-row">
+                <span>Pakowanie premium</span>
+                <span style="color:var(--gold)">W komplecie</span>
+            </div>
+            <div class="summary-total">
+                <span class="summary-total-label">Łącznie</span>
+                <span class="summary-total-price">18 700 zł</span>
+            </div>
+            <button class="btn-checkout" onclick="zamow()">
+                Zapłać &nbsp;<i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <a href="bizuteria.html" class="btn-continue">Kontynuuj zakupy</a>
+            <p class="cart-note">
+                <i class="fa-solid fa-lock"></i> Bezpieczna transakcja<br>
+                <i class="fa-solid fa-box"></i> Dostawa 2–3 dni robocze<br>
+                <i class="fa-solid fa-rotate-left"></i> Zwrot w ciągu 14 dni
+            </p>
+        </aside>
+
+    </div>
+</div>
+</main>
+
+
+<footer>
+    <small>&copy; 2026  designbymonika.github.io  @  designbymonika@adresik.ne</small>
+</footer>
+
+<script src="./app/app.js"></script>
+</body>
+</html>
